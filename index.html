@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad · Pregunta a tus PDF</title>
+<meta name="description" content="Política de privacidad de la app Pregunta a tus PDF (com.alfredoyujra.preguntaatuspdf): funciona sin internet, no recopila datos personales y no usa servidores.">
+<meta name="robots" content="index,follow">
+<style>
+  :root {
+    --bg: #f5f5fb; --card: #ffffff; --ink: #1f2240; --body: #3a3f58; --muted: #5e6278;
+    --line: #e6e8f2; --primary: #4b4acf; --primary-dark: #37369e; --navy: #22205f;
+    --soft: #e8e8f8; --amber: #f5a623; --amber-bg: #fff5db;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #12132a; --card: #1c1d3a; --ink: #f1f1fb; --body: #d6d7ea; --muted: #b3b5cf;
+      --line: #2e3059; --primary: #a9a8ff; --primary-dark: #c9c8ff; --navy: #22205f;
+      --soft: #2a2b55; --amber: #f5a623; --amber-bg: #3a2f14;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; background: var(--bg); color: var(--body);
+    font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  a { color: var(--primary-dark); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; border-radius: 6px; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--card); padding: 8px 12px; border-radius: 8px; }
+  .skip:focus { left: 16px; z-index: 10; }
+  header.hero {
+    background: linear-gradient(135deg, #4b4acf, #22205f); color: #fff; padding: 40px 16px 72px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 14px; }
+  .brand img { width: 64px; height: 64px; border-radius: 16px; box-shadow: 0 8px 22px rgba(0,0,0,.25); background: #03214f; }
+  .brand h1 { margin: 0; font-size: clamp(24px, 5vw, 34px); line-height: 1.15; color: #fff; }
+  .brand p { margin: 2px 0 0; color: rgba(255,255,255,.9); font-size: 15px; }
+  .meta { margin-top: 18px; display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: rgba(255,255,255,.16); border-radius: 999px; padding: 4px 12px; font-size: 13.5px; color: #fff; }
+  .chip code { font-size: 13px; color: #fff; }
+  a.chip { text-decoration: none; font-weight: 700; }
+  a.chip:hover { background: rgba(255,255,255,.28); }
+  .contact { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+  .contact a.btn { background: linear-gradient(135deg, #4b4acf, #22205f); color: #fff; text-decoration: none; font-weight: 700; padding: 12px 18px; border-radius: 14px; }
+  nav.lang { margin-top: 18px; display: flex; gap: 8px; flex-wrap: wrap; }
+  nav.lang a { color: #fff; background: rgba(255,255,255,.14); padding: 6px 12px; border-radius: 10px; text-decoration: none; font-weight: 700; font-size: 14px; }
+  nav.lang a:hover { background: rgba(255,255,255,.26); }
+  main { padding: 0 16px 48px; margin-top: -44px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 22px; padding: 22px 22px 10px; margin-bottom: 18px; box-shadow: 0 6px 18px rgba(31,34,64,.06); }
+  .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 6px 0 14px; padding: 0; list-style: none; }
+  .summary li { background: var(--soft); border-radius: 16px; padding: 12px 14px; color: var(--ink); font-size: 15px; }
+  .summary li strong { display: block; color: var(--ink); }
+  h2 { color: var(--ink); font-size: 22px; margin: 6px 0 10px; line-height: 1.3; }
+  h3 { color: var(--ink); font-size: 17.5px; margin: 22px 0 6px; }
+  p, li { color: var(--body); }
+  ul { padding-left: 22px; }
+  .note { background: var(--amber-bg); border-radius: 14px; padding: 12px 14px; color: var(--ink); margin: 12px 0 16px; }
+  .table-wrap { overflow-x: auto; margin: 6px 0 16px; }
+  table { border-collapse: collapse; width: 100%; min-width: 540px; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+  th { color: var(--ink); background: var(--soft); }
+  .toc { columns: 2 240px; padding-left: 20px; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 8px 16px 32px; }
+  .top { display: inline-block; margin: 4px 0 14px; font-size: 14px; }
+</style>
+</head>
+<body>
+<a class="skip" href="#es">Saltar al contenido</a>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <img src="data:image/png;base64,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" alt="Ícono de Pregunta a tus PDF: hoja con etiqueta PDF y un globo con la respuesta resaltada" width="64" height="64">
+      <div>
+        <h1>Pregunta a tus PDF</h1>
+        <p>Política de privacidad · Privacy policy · Política de privacidade</p>
+      </div>
+    </div>
+    <div class="meta">
+      <span class="chip">Última actualización: 17 de noviembre de 2026</span>
+      <span class="chip">Paquete: <code>com.alfredoyujra.preguntaatuspdf</code></span>
+      <a class="chip" href="mailto:alfredjose310@gmail.com">✉ Contacto: alfredjose310@gmail.com</a>
+    </div>
+    <nav class="lang" aria-label="Idioma / Language / Idioma">
+      <a href="#es" lang="es">Español</a>
+      <a href="#en" lang="en">English</a>
+      <a href="#pt" lang="pt">Português</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+<!-- ============================ ESPAÑOL ============================ -->
+<section id="es" lang="es" aria-labelledby="es-title">
+  <div class="card">
+    <h2 id="es-title">Política de privacidad</h2>
+    <p>Esta política explica qué información usa la aplicación <strong>Pregunta a tus PDF</strong> para Android (paquete <code>com.alfredoyujra.preguntaatuspdf</code>, en adelante «la app») y cómo se protege.</p>
+    <ul class="summary" aria-label="Resumen">
+      <li><strong>Sin cuentas</strong>No pide nombre, correo, teléfono ni contraseña.</li>
+      <li><strong>Sin internet</strong>La app no tiene permiso de internet. Tus documentos se procesan en el teléfono.</li>
+      <li><strong>Sin servidores</strong>No tenemos servidores ni recibimos tus documentos, preguntas o historial.</li>
+      <li><strong>Sin publicidad ni rastreo</strong>No hay anuncios, analítica ni SDK de rastreo.</li>
+    </ul>
+    <div class="note"><strong>Aplicación no oficial.</strong> Pregunta a tus PDF es una aplicación independiente y privada. No representa a ningún gobierno, ministerio ni entidad pública, y no está afiliada ni respaldada por ellos. No incluye leyes, normas ni documentos oficiales: solo lee los documentos que tú agregas.</div>
+    <h3>Contenido</h3>
+    <ol class="toc">
+      <li><a href="#es-1">Responsable y contacto</a></li>
+      <li><a href="#es-2">Información que recopilamos</a></li>
+      <li><a href="#es-3">Información que se queda en tu teléfono</a></li>
+      <li><a href="#es-4">Permisos</a></li>
+      <li><a href="#es-5">Servicios de terceros</a></li>
+      <li><a href="#es-6">Copia de seguridad</a></li>
+      <li><a href="#es-7">Bloqueo con PIN y huella</a></li>
+      <li><a href="#es-8">Compras y prueba gratis</a></li>
+      <li><a href="#es-9">Seguridad</a></li>
+      <li><a href="#es-10">Conservación y eliminación</a></li>
+      <li><a href="#es-11">Tus derechos</a></li>
+      <li><a href="#es-12">Menores de edad</a></li>
+      <li><a href="#es-13">Cambios en esta política</a></li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h3 id="es-1">1. Responsable y contacto</h3>
+    <p>La app es desarrollada y mantenida por un desarrollador independiente. Para cualquier consulta sobre privacidad, reclamos, soporte o para ejercer tus derechos, escribe a <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a>. Respondemos en un plazo máximo de 15 días hábiles.</p>
+
+    <h3 id="es-2">2. Información que recopilamos</h3>
+    <p><strong>Ninguna.</strong> No pedimos datos personales, no creamos cuentas de usuario y no recibimos tus documentos, tus preguntas, tu historial, tu audio ni tus datos biométricos. No usamos publicidad ni servicios de analítica, métricas o rastreo. La app no tiene permiso de internet, por lo que no puede enviar información por sí misma.</p>
+
+    <h3 id="es-3">3. Información que se queda en tu teléfono</h3>
+    <p>Para funcionar, la app guarda en su <strong>almacenamiento privado</strong>, al que otras apps no pueden acceder:</p>
+    <ul>
+      <li>Una copia de los documentos PDF o Word que eliges, el texto leído y su índice de búsqueda.</li>
+      <li>El historial de preguntas y respuestas de cada documento.</li>
+      <li>Tus preferencias: idioma, lectura en voz alta y colores de la app.</li>
+      <li>El contador de preguntas diarias del plan gratis, la fecha de inicio de la prueba gratis y el estado de tu plan Pro.</li>
+      <li>Si activas el bloqueo, un valor cifrado del PIN (nunca el PIN).</li>
+    </ul>
+    <p>La lectura del texto, el reconocimiento de texto en documentos escaneados (OCR), la búsqueda y la exportación a Word o Excel se hacen en el teléfono, sin internet. Estos datos <strong>no</strong> se incluyen en las copias de seguridad automáticas de Android en la nube ni en la transferencia a otro teléfono.</p>
+
+    <h3 id="es-4">4. Permisos</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Permiso</th><th scope="col">Para qué se usa</th></tr></thead>
+        <tbody>
+          <tr><td>Micrófono (<code>RECORD_AUDIO</code>)</td><td>Solo mientras dictas una pregunta, y solo si lo permites. Puedes negarlo y seguir escribiendo.</td></tr>
+          <tr><td>Huella / biometría (<code>USE_BIOMETRIC</code>)</td><td>Solo si activas el desbloqueo con huella. La verificación la hace Android.</td></tr>
+          <tr><td>Facturación de Google Play (<code>BILLING</code>)</td><td>Comprar y restaurar los planes Pro.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>La app <strong>no</strong> pide acceso a internet, contactos, ubicación, cámara ni a todos tus archivos. Tú eliges cada documento con el selector de archivos de Android.</p>
+
+    <h3 id="es-5">5. Servicios de terceros</h3>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th scope="col">Servicio</th><th scope="col">Uso</th><th scope="col">Qué información recibe</th></tr></thead>
+        <tbody>
+          <tr><td>Google Play (compras)</td><td>Comprar, renovar y restaurar Pro.</td><td>Google procesa el pago con tu cuenta de Google, mediante la app Play Store. La app solo recibe si la compra es válida. Nunca vemos datos de tarjeta. <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a></td></tr>
+          <tr><td>Dictado por voz del teléfono</td><td>Escribir tu pregunta hablando (opcional).</td><td>Lo hace el servicio de voz de tu teléfono (por ejemplo, Google), que puede usar internet según su propia configuración y política. La app no recibe el audio, solo el texto reconocido.</td></tr>
+          <tr><td>Lectura en voz alta del teléfono</td><td>Escuchar las respuestas (opcional).</td><td>Lo hace el motor de voz instalado en tu teléfono.</td></tr>
+          <tr><td>Google ML Kit (OCR)</td><td>Leer documentos escaneados.</td><td>El modelo va dentro de la app y funciona sin internet. Desactivamos su envío de métricas: no se transmite nada.</td></tr>
+          <tr><td>Google Drive u otra app que elijas</td><td>Guardar tu copia de seguridad (opcional).</td><td>Solo el archivo cifrado que tú decides guardar. La app no usa la API de Google ni accede a tu cuenta de Drive.</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3 id="es-6">6. Copia de seguridad</h3>
+    <p>Solo si tú la creas, la app arma un archivo <code>.pdfbak</code> cifrado con <strong>AES-256-GCM</strong>. La clave se deriva de tu contraseña con <strong>Argon2id</strong>, y la contraseña no se guarda en ningún lado. El archivo contiene tus documentos, sus índices, el historial, el idioma y los colores. <strong>No</strong> incluye tu PIN, tu compra ni el contador de preguntas. La app no sube el archivo a ningún servidor: solo abre Google Drive, el selector de archivos o el menú Compartir de Android para que tú lo guardes donde quieras. Sin la contraseña nadie puede abrir la copia, tampoco nosotros.</p>
+
+    <h3 id="es-7">7. Bloqueo con PIN y huella</h3>
+    <p>Si activas el bloqueo, el PIN no se guarda: solo un valor derivado con PBKDF2-HMAC-SHA256 y sal aleatoria. La huella o el rostro los verifica Android; la app nunca recibe ni guarda datos biométricos, solo la respuesta «verificado» o «no verificado».</p>
+
+    <h3 id="es-8">8. Compras y prueba gratis</h3>
+    <p>La primera vez que abres la app tienes Pro gratis por 15 días, sin tarjeta y sin cobro al terminar. La fecha de inicio se guarda solo en el teléfono. Los planes Pro (mensual, anual y pago único) se compran con Google Play. Puedes cancelar una suscripción en Google Play › Pagos y suscripciones. Los términos, la cancelación y los reembolsos están en la app, en Ajustes › Términos, reembolsos y contacto.</p>
+
+    <h3 id="es-9">9. Seguridad</h3>
+    <ul>
+      <li>Los datos quedan en el almacenamiento privado de la app, aislado y cifrado por Android.</li>
+      <li>La app no tiene permiso de internet ni conexiones propias, y no ejecuta código descargado.</li>
+      <li>Los archivos que abres se validan; los archivos dañados o manipulados se rechazan.</li>
+      <li>Si encuentras una vulnerabilidad, escríbenos a <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a>. Te responderemos en un máximo de 7 días hábiles.</li>
+    </ul>
+
+    <h3 id="es-10">10. Conservación y eliminación</h3>
+    <p>Tus datos se conservan en tu teléfono hasta que los borres:</p>
+    <ul>
+      <li>Elimina un documento y se borran su copia, su índice y su historial.</li>
+      <li>En <strong>Ajustes › Borrar todos mis datos</strong> se eliminan todos los documentos, índices e historiales.</li>
+      <li>También puedes borrar los datos de la app en Ajustes de Android › Apps › Pregunta a tus PDF, o desinstalarla.</li>
+    </ul>
+    <p>Como no guardamos nada en servidores, no tenemos datos tuyos que borrar de nuestro lado. Tu compra de Pro queda en tu cuenta de Google y puedes restaurarla.</p>
+
+    <h3 id="es-11">11. Tus derechos</h3>
+    <p>Puedes ejercer tus derechos de acceso, rectificación, cancelación u oposición (ARCO) o los equivalentes de la ley de tu país. Como la app no nos envía datos, tú los controlas directamente desde el teléfono: verlos, editarlos o borrarlos. Para cualquier solicitud, escribe a <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a>.</p>
+
+    <h3 id="es-12">12. Menores de edad</h3>
+    <p>La app es una herramienta de productividad para personas adultas y no está dirigida a niños. No recopila información de ningún usuario, incluidos menores. Las compras dentro de la app están sujetas a los controles parentales de Google Play.</p>
+
+    <h3 id="es-13">13. Cambios en esta política</h3>
+    <p>Si esta política cambia, publicaremos la nueva versión en esta página con su fecha de actualización.</p>
+    <a class="top" href="#es">↑ Volver arriba</a>
+  </div>
+</section>
+
+<!-- ============================ ENGLISH ============================ -->
+<section id="en" lang="en" aria-labelledby="en-title">
+  <div class="card">
+    <h2 id="en-title">Privacy policy (English)</h2>
+    <p>This policy explains what information the Android app <strong>Pregunta a tus PDF</strong> (package <code>com.alfredoyujra.preguntaatuspdf</code>, “the app”) uses and how it is protected.</p>
+    <ul class="summary" aria-label="Summary">
+      <li><strong>No accounts</strong>No name, email, phone or password required.</li>
+      <li><strong>Offline</strong>The app has no internet permission. Your documents are processed on the phone.</li>
+      <li><strong>No servers</strong>We have no servers and never receive your documents, questions or history.</li>
+      <li><strong>No ads or tracking</strong>No ads, analytics or tracking SDKs.</li>
+    </ul>
+    <div class="note"><strong>Unofficial app.</strong> Pregunta a tus PDF is an independent, private app. It does not represent any government or public entity and is not affiliated with or endorsed by any.</div>
+
+    <h3>1. Controller and contact</h3>
+    <p>The app is developed by an independent developer. For privacy questions, complaints, support or rights requests, email <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a>. We reply within 15 business days.</p>
+    <h3>2. Information we collect</h3>
+    <p><strong>None.</strong> We do not ask for personal data, create accounts, or receive your documents, questions, history, audio or biometric data. There are no ads, analytics or tracking. The app has no internet permission, so it cannot send information on its own.</p>
+    <h3>3. Information stored on your phone</h3>
+    <p>The app keeps, in its private storage: copies of the PDF/Word documents you choose, their extracted text and search index, your question history, preferences (language, read aloud, colors), the free-plan daily counter, the trial start date, your Pro status and, if you enable the lock, a derived value of your PIN (never the PIN itself). Text reading, OCR, search and Word/Excel export happen on the device. This data is excluded from Android cloud backups and device transfer.</p>
+    <h3>4. Permissions</h3>
+    <p>Microphone (only while you dictate, if you allow it), biometrics (only if you enable fingerprint unlock; Android does the check) and Google Play Billing (purchases). No internet, contacts, location, camera or all-files access.</p>
+    <h3>5. Third-party services</h3>
+    <p>Google Play processes purchases (we never see card data; <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>). Voice dictation and read-aloud use your phone’s speech services, which may use the internet under their own settings. The app receives only the recognized text, never the audio. Google ML Kit OCR runs on the device with its metrics disabled. Google Drive or any app you choose only receives the encrypted backup file you decide to save. The app does not use any Google API.</p>
+    <h3>6. Backup</h3>
+    <p>Only if you create one: a <code>.pdfbak</code> file encrypted with AES-256-GCM, with the key derived from your password using Argon2id. The password is never stored. It contains your documents, indexes, history, language and colors, but not your PIN, purchase or question counter. You choose where to save it.</p>
+    <h3>7. PIN and fingerprint lock</h3>
+    <p>The PIN is stored only as a salted PBKDF2-HMAC-SHA256 value. Biometrics are verified by Android; the app never receives biometric data.</p>
+    <h3>8. Purchases and free trial</h3>
+    <p>On first launch you get Pro free for 15 days, with no card needed and no charge when it ends. Pro plans (monthly, yearly, one-time) are purchased through Google Play and can be cancelled in Google Play › Payments &amp; subscriptions. Terms, cancellation and refunds are in the app under Settings.</p>
+    <h3>9. Retention, deletion and your rights</h3>
+    <p>Data stays on your phone until you delete it: delete a document, use <strong>Settings › Delete all my data</strong>, clear the app data in Android settings, or uninstall the app. We hold no data about you. You can exercise your access, rectification, deletion or objection rights, or their equivalents under your local law, directly on your phone, or by emailing us.</p>
+    <h3>10. Children</h3>
+    <p>The app is a productivity tool for adults and is not directed at children. It collects no data from anyone. In-app purchases are subject to Google Play parental controls.</p>
+    <h3>11. Changes</h3>
+    <p>Any changes will be published on this page with a new date.</p>
+    <a class="top" href="#es">↑ Back to top</a>
+  </div>
+</section>
+
+<!-- ============================ PORTUGUÊS ============================ -->
+<section id="pt" lang="pt" aria-labelledby="pt-title">
+  <div class="card">
+    <h2 id="pt-title">Política de privacidade (Português)</h2>
+    <p>Esta política explica quais informações o app Android <strong>Pregunta a tus PDF</strong> (pacote <code>com.alfredoyujra.preguntaatuspdf</code>) usa e como são protegidas.</p>
+    <ul>
+      <li><strong>Não coletamos nenhum dado pessoal.</strong> Não há contas, anúncios, análise nem rastreamento, e o app não tem permissão de internet.</li>
+      <li>Seus documentos, índices, histórico e preferências ficam apenas no armazenamento privado do app, excluídos dos backups automáticos na nuvem.</li>
+      <li>Permissões: microfone (só ao ditar, se você permitir), biometria (só se ativar o desbloqueio por digital; o Android faz a verificação) e faturamento do Google Play.</li>
+      <li>Compras pelo Google Play: nunca vemos dados de cartão. O ditado por voz usa o serviço de voz do celular, que pode usar a internet. O app recebe só o texto reconhecido.</li>
+      <li>Backup opcional: arquivo <code>.pdfbak</code> criptografado (AES-256-GCM com chave derivada da sua senha por Argon2id). A senha não é salva. Você escolhe onde salvar, por exemplo no Google Drive, sem que o app use a API do Google.</li>
+      <li>Bloqueio: o PIN é guardado só como valor derivado (PBKDF2 com sal). O app nunca recebe dados biométricos.</li>
+      <li>Teste grátis do Pro por 15 dias, sem cartão e sem cobrança ao terminar.</li>
+      <li>Para apagar tudo: Ajustes › Apagar todos os meus dados, ou desinstale o app. Para dúvidas ou exercer seus direitos: <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a>.</li>
+      <li>O app é para adultos, não é direcionado a crianças e não é um app oficial de nenhum governo.</li>
+    </ul>
+    <a class="top" href="#es">↑ Voltar ao topo</a>
+  </div>
+</section>
+
+  <div class="card" id="contacto" aria-labelledby="contact-title">
+    <h2 id="contact-title">Contacto · Contact · Contato</h2>
+    <p>Privacidad, soporte, reclamos, reembolsos y derechos sobre tus datos · Privacy, support, refunds and data rights · Privacidade, suporte, reembolsos e direitos:</p>
+    <p class="contact">
+      <a class="btn" href="mailto:alfredjose310@gmail.com?subject=Pregunta%20a%20tus%20PDF">✉ alfredjose310@gmail.com</a>
+      <span>Respuesta en un máximo de 15 días hábiles.</span>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 Pregunta a tus PDF · Aplicación independiente, no gubernamental · <a href="mailto:alfredjose310@gmail.com">alfredjose310@gmail.com</a></p>
+</footer>
+</body>
+</html>
